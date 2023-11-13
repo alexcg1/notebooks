@@ -1,0 +1,34 @@
+{
+  "type": "object",
+  "properties": {
+    "long_description": {
+      "type": "string",
+      "description": "description of the image. Up to 20 words."
+    },
+    "text_objects": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "description": "array of JSON objects representing every text string in the image",
+        "properties": {
+          "text_string": {
+            "type": "string",
+            "description": "the text string"
+          },
+          "english_translation": {
+            "type": "string",
+            "description": "the english translation of text string"
+          },
+          "language": {
+            "type": "string",
+            "description": "the language of the text string"
+          },
+          "iso_code": {
+            "type": "string",
+            "description": "iso-639-1 code for the language of the string"
+          }
+        }
+      }
+    }
+  }
+}

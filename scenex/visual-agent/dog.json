@@ -1,0 +1,27 @@
+{
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "Describe the image in under 10 words"
+    },
+    "action": {
+      "type": "array",
+      "description": "You are a robotic dog and your mission is to explore the city. The image shows what is in front of you. What action do you take? Your previous actions were:",
+      "enum": actions,
+      "maxContains": 1,
+    },
+    "history": {
+      "type": null,
+      "description": "You are a robot dog. You just woke up and you want to find food by exploring your surroundings."
+    },
+    "reason": {
+      "type": "string",
+      "description": "Explain why you chose your action"
+    },
+    "context": {
+      "type": "string",
+      "description": "Explain the decision you just made and why. Use the past tense and summarize to under 50 words",
+    }
+  }
+}

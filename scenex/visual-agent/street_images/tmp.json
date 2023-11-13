@@ -1,0 +1,19 @@
+{
+  "type": "object",
+  "properties": {
+    "image_contents": {
+      "type": "string",
+      "description": "Describe the image in under 10 words"
+    }
+    "action": {
+      "type": "array",
+      "description": f"You are a robotic dog and your mission is to {mission}. The image shows what is in front of you. What action do you take?",
+      "enum": actions,
+      "maxContains": 1
+    },
+    "reason": {
+      "type": "string",
+      "description": "Explain why you chose your action"
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "type": "object",
+  "properties": {
+    "alt_tag": {
+      "type": "string",
+      "description": "a short and concise alt-tag for the image, so visually-impaired users can know what they're looking at"
+    },
+    "long_description": {
+      "type": "string",
+      "description": "description of the image. Up to 20 words."
+    },
+    "text_strings": {
+      "type": "array",
+      "description": "list of all text strings in the image"
+    },
+    "english_translations": {
+      "type": "array",
+      "description": "english translations of every string in the image"
+    },
+    "languages": {
+      "type": "array",
+      "description": "all the languages used in the image"
+    },
+    "iso_codes": {
+      "type": "array",
+      "description": "the iso-639-1 code for the language of every string in the image"
+    }
+  }
+}
